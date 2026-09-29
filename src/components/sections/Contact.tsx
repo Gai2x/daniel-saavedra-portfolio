@@ -3,7 +3,7 @@ import { Arrow, Code, External, LinkIcon, Mail } from '../Icons'
 
 export default function Contact() {
   return (
-    <section id="contact" className="border-t border-white/5 bg-[#10182b]">
+    <section id="contact" className="border-t-2 border-[rgb(var(--c-border))] bg-[rgb(var(--c-panel-alt))]">
       <div className="mx-auto max-w-6xl px-5 py-24">
         <SectionHeading eyebrow="06 / Comms" title="Let’s build something thoughtful.">
           Reach me through email or connect with me online.

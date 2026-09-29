@@ -1,3 +1,4 @@
+import BootScreen from './components/sections/BootScreen'
 import Hero from './components/sections/Hero'
 import About from './components/sections/About'
 import Skills from './components/sections/Skills'
@@ -13,17 +14,6 @@ const projectPath = window.location.pathname.split('/').filter(Boolean).at(-1)
 
 export default function App() {
   const project = projects.find((item) => item.slug === projectPath)
-  if (project) return <ProjectDetail project={project} />
-  return (
-    <>
-      <Hero />
-      <About />
-      <Skills />
-      <Projects />
-      <Journey />
-      <Education />
-      <Contact />
-      <Footer />
-    </>
-  )
+  if (project) return <><BootScreen /><ProjectDetail project={project} /></>
+  return <><BootScreen /><Hero /><About /><Skills /><Projects /><Journey /><Education /><Contact /><Footer /></>
 }

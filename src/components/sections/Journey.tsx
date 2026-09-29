@@ -23,15 +23,15 @@ const steps = [
 
 export default function Journey() {
   return (
-    <section id="journey" className="border-y border-white/5 bg-navy-900">
+    <section id="journey" className="border-y border-[rgb(var(--c-border)/0.3)] bg-navy-900">
       <div className="mx-auto max-w-6xl px-5 py-24">
         <SectionHeading eyebrow="04 / Objective track" title="Growing through active development." />
         <div className="grid gap-5 md:grid-cols-3">
           {steps.map((step) => (
-            <article key={step.label} className={`border-l-2 bg-panel p-5 ${step.accent ? 'border-accent' : 'border-navy-300'}`}>
-              <p className={step.accent ? 'hud-label' : 'hud-label-dim'}>{step.label}</p>
-              <h3 className="mt-3 font-display text-lg font-bold text-white">{step.title}</h3>
-              <p className="mt-2 text-sm leading-6 text-slate-400">{step.body}</p>
+            <article key={step.label} className={`border-l-4 bg-panel p-5 ${step.accent ? 'border-pink' : 'border-navy-300'}`}>
+              <p className={step.accent ? 'font-pixel text-[10px] text-pink' : 'hud-label-dim'}>{step.label}</p>
+              <h3 className="mt-3 font-pixel text-[11px] leading-[1.7] text-[rgb(var(--c-text))]">{step.title}</h3>
+              <p className="mt-2 text-sm leading-6 text-[rgb(var(--c-text-soft))]">{step.body}</p>
             </article>
           ))}
         </div>

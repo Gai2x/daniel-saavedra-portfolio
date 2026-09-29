@@ -3,8 +3,98 @@
 > node ./node_modules/vite/bin/vite.js
 
 
-  [32m[1mVITE[22m v8.2.2[39m  [2mready in [0m[1m280[22m[2m[0m ms[22m
+  [32m[1mVITE[22m v8.2.2[39m  [2mready in [0m[1m295[22m[2m[0m ms[22m
 
   [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m5173[22m/[39m
 [2m  [32m➜[39m  [1mNetwork[22m[2m: use [22m[1m--host[22m[2m to expose[22m
-[2m2:42:18 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/styles/index.css, /src/components/Header.tsx[22m
+[2m10:49:05 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/styles/index.css[22m
+[2m10:50:03 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/styles/index.css[22m
+[2m10:50:03 PM[22m [31m[1m[vite][22m[39m [31mInternal server error: [postcss] F:/Major Subjects/mini project/secondProject/src/styles/index.css:159:84: Missed semicolon[39m
+  Plugin: [35mvite:css[39m
+  File: [36mF:/Major Subjects/mini project/secondProject/src/styles/index.css[39m:159:83
+[33m  157 |    .marquee-track > span { color: rgb(var(--c-on-pink)); }
+  158 |    .light-mode .marquee-track > span { color: #000; }
+  159 |    @keyframes marquee { from { transform: translateX(0); } to { transform: transform: translateX(-50%); } }
+      |                                                                                     ^
+  160 |  
+  161 |    /* Boot loading bar */[39m
+      at Input.error (F:\Major Subjects\mini project\secondProject\node_modules\postcss\lib\input.js:135:16)
+      at Parser.checkMissedSemicolon (F:\Major Subjects\mini project\secondProject\node_modules\postcss\lib\parser.js:145:22)
+      at Parser.decl (F:\Major Subjects\mini project\secondProject\node_modules\postcss\lib\parser.js:303:12)
+      at Parser.other (F:\Major Subjects\mini project\secondProject\node_modules\postcss\lib\parser.js:411:18)
+      at Parser.parse (F:\Major Subjects\mini project\secondProject\node_modules\postcss\lib\parser.js:482:16)
+      at parse (F:\Major Subjects\mini project\secondProject\node_modules\postcss\lib\parse.js:11:12)
+      at new LazyResult (F:\Major Subjects\mini project\secondProject\node_modules\postcss\lib\lazy-result.js:171:16)
+      at Processor.process (F:\Major Subjects\mini project\secondProject\node_modules\postcss\lib\processor.js:53:14)
+      at runPostCSS (file:///F:/Major%20Subjects/mini%20project/secondProject/node_modules/vite/dist/node/chunks/node.js:23223:66)
+      at async compilePostCSS (file:///F:/Major%20Subjects/mini%20project/secondProject/node_modules/vite/dist/node/chunks/node.js:23207:6)
+[2m10:50:09 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/styles/index.css[22m
+[2m10:50:40 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/styles/index.css, /src/components/Header.tsx[22m
+[2m10:50:40 PM[22m [31m[1m[vite][22m[39m [31mInternal server error: Transform failed with 2 errors:
+
+[31m[PARSE_ERROR] [0mExpected corresponding JSX closing tag for 'div'.
+    [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m src/components/Header.tsx:19:11 [38;5;246m][0m
+    [38;5;246m│[0m
+ [38;5;246m13 │[0m [38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m<[0mdiv[38;5;249m [0m[38;5;249mc[0m[38;5;249ml[0m[38;5;249ma[0m[38;5;249ms[0m[38;5;249ms[0m[38;5;249mN[0m[38;5;249ma[0m[38;5;249mm[0m[38;5;249me[0m[38;5;249m=[0m[38;5;249m"[0m[38;5;249mm[0m[38;5;249ma[0m[38;5;249mr[0m[38;5;249mq[0m[38;5;249mu[0m[38;5;249me[0m[38;5;249me[0m[38;5;249m-[0m[38;5;249mt[0m[38;5;249mr[0m[38;5;249ma[0m[38;5;249mc[0m[38;5;249mk[0m[38;5;249m [0m[38;5;249mf[0m[38;5;249mo[0m[38;5;249mn[0m[38;5;249mt[0m[38;5;249m-[0m[38;5;249mp[0m[38;5;249mi[0m[38;5;249mx[0m[38;5;249me[0m[38;5;249ml[0m[38;5;249m [0m[38;5;249mt[0m[38;5;249me[0m[38;5;249mx[0m[38;5;249mt[0m[38;5;249m-[0m[38;5;249m[[0m[38;5;249m9[0m[38;5;249mp[0m[38;5;249mx[0m[38;5;249m][0m[38;5;249m"[0m[38;5;249m>[0m
+ [38;5;240m   │[0m          ─┬─  
+ [38;5;240m   │[0m           ╰─── Opened here
+ [38;5;240m   │[0m 
+ [38;5;246m19 │[0m [38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m<[0m[38;5;249m/[0mcorrupted[38;5;249m>[0m
+ [38;5;240m   │[0m           ────┬────  
+ [38;5;240m   │[0m               ╰────── Expected `</div>`
+[38;5;246m────╯[0m
+
+[31m[PARSE_ERROR] [0mUnexpected token. Did you mean `{'>'}` or `&gt;`?
+    [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m src/components/Header.tsx:31:16 [38;5;246m][0m
+    [38;5;246m│[0m
+ [38;5;246m31 │[0m [38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249ma[0m[38;5;249mc[0m[38;5;249mt[0m[38;5;249mi[0m[38;5;249mo[0m[38;5;249mn[0m[38;5;249ms[0m[38;5;249m>[0m
+ [38;5;240m   │[0m                │ 
+ [38;5;240m   │[0m                ╰─ 
+[38;5;246m────╯[0m
+[39m
+  Plugin: [35mvite:oxc[39m
+  File: [36mF:/Major Subjects/mini project/secondProject/src/components/Header.tsx[39m
+      at transformWithOxc (file:///F:/Major%20Subjects/mini%20project/secondProject/node_modules/vite/dist/node/chunks/node.js:4103:19)
+      at TransformPluginContext.transform (file:///F:/Major%20Subjects/mini%20project/secondProject/node_modules/vite/dist/node/chunks/node.js:4174:26)
+      at EnvironmentPluginContainer.transform (file:///F:/Major%20Subjects/mini%20project/secondProject/node_modules/vite/dist/node/chunks/node.js:30932:51)
+      at async loadAndTransform (file:///F:/Major%20Subjects/mini%20project/secondProject/node_modules/vite/dist/node/chunks/node.js:20671:26)
+      at async viteTransformMiddleware (file:///F:/Major%20Subjects/mini%20project/secondProject/node_modules/vite/dist/node/chunks/node.js:25205:20)
+[2m10:51:11 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/styles/index.css, /src/components/Header.tsx[22m
+[2m10:51:19 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mindex.html[22m
+[2m10:51:35 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mindex.html[22m
+[2m10:52:32 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/styles/index.css, /src/components/Panel.tsx[22m
+[2m10:52:32 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/styles/index.css, /src/components/Panel.tsx[22m
+[2m10:52:32 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/sections/Hero.tsx, /src/styles/index.css[22m
+[2m10:52:32 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/sections/About.tsx, /src/styles/index.css[22m
+[2m10:52:32 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/sections/Skills.tsx, /src/styles/index.css[22m
+[2m10:52:32 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/sections/Projects.tsx, /src/styles/index.css[22m
+[2m10:52:33 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/sections/Journey.tsx, /src/styles/index.css[22m
+[2m10:52:42 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/sections/Education.tsx, /src/styles/index.css[22m
+[2m10:52:42 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/sections/Footer.tsx, /src/styles/index.css[22m
+[2m10:52:42 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/sections/Contact.tsx, /src/styles/index.css[22m
+[2m10:52:42 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/ProjectDetail.tsx, /src/styles/index.css[22m
+[2m10:52:50 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/styles/index.css, /src/components/ProjectVisual.tsx[22m
+[2m10:52:50 PM[22m [31m[1m[vite][22m[39m [31mInternal server error: Transform failed with 1 error:
+
+[31m[PARSE_ERROR] [0mExpected `}` but found `EOF`
+   [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m src/components/ProjectVisual.tsx:1:72 [38;5;246m][0m
+   [38;5;246m│[0m
+ [38;5;246m1 │[0m [38;5;249me[0m[38;5;249mx[0m[38;5;249mp[0m[38;5;249mo[0m[38;5;249mr[0m[38;5;249mt[0m[38;5;249m [0m[38;5;249md[0m[38;5;249me[0m[38;5;249mf[0m[38;5;249ma[0m[38;5;249mu[0m[38;5;249ml[0m[38;5;249mt[0m[38;5;249m [0m[38;5;249mf[0m[38;5;249mu[0m[38;5;249mn[0m[38;5;249mc[0m[38;5;249mt[0m[38;5;249mi[0m[38;5;249mo[0m[38;5;249mn[0m[38;5;249m [0m[38;5;249mP[0m[38;5;249mr[0m[38;5;249mo[0m[38;5;249mj[0m[38;5;249me[0m[38;5;249mc[0m[38;5;249mt[0m[38;5;249mV[0m[38;5;249mi[0m[38;5;249ms[0m[38;5;249mu[0m[38;5;249ma[0m[38;5;249ml[0m[38;5;249m([0m[38;5;249m{[0m[38;5;249m [0m[38;5;249mk[0m[38;5;249mi[0m[38;5;249mn[0m[38;5;249md[0m[38;5;249m,[0m[38;5;249m [0m[38;5;249mi[0m[38;5;249mm[0m[38;5;249ma[0m[38;5;249mg[0m[38;5;249me[0m[38;5;249m,[0m[38;5;249m [0m[38;5;249ml[0m[38;5;249ma[0m[38;5;249mr[0m[38;5;249mg[0m[38;5;249me[0m[38;5;249m [0m[38;5;249m=[0m[38;5;249m [0m[38;5;249mc[0m[38;5;249ml[0m[38;5;249me[0m[38;5;249ma[0m[38;5;249mn[0m[38;5;249m [0m[38;5;249m}[0m[38;5;249m)[0m[38;5;249m [0m{
+ [38;5;240m  │[0m                                                                       ┬│ 
+ [38;5;240m  │[0m                                                                       ╰── Opened here
+ [38;5;240m  │[0m                                                                        │ 
+ [38;5;240m  │[0m                                                                        ╰─ `}` expected
+[38;5;246m───╯[0m
+[39m
+  Plugin: [35mvite:oxc[39m
+  File: [36mF:/Major Subjects/mini project/secondProject/src/components/ProjectVisual.tsx[39m
+      at transformWithOxc (file:///F:/Major%20Subjects/mini%20project/secondProject/node_modules/vite/dist/node/chunks/node.js:4103:19)
+      at TransformPluginContext.transform (file:///F:/Major%20Subjects/mini%20project/secondProject/node_modules/vite/dist/node/chunks/node.js:4174:26)
+      at EnvironmentPluginContainer.transform (file:///F:/Major%20Subjects/mini%20project/secondProject/node_modules/vite/dist/node/chunks/node.js:30932:51)
+      at async loadAndTransform (file:///F:/Major%20Subjects/mini%20project/secondProject/node_modules/vite/dist/node/chunks/node.js:20671:26)
+      at async viteTransformMiddleware (file:///F:/Major%20Subjects/mini%20project/secondProject/node_modules/vite/dist/node/chunks/node.js:25205:20)
+[2m10:53:11 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/styles/index.css, /src/components/ProjectVisual.tsx[22m
+[2m10:53:11 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/styles/index.css, /src/components/ProjectVisual.tsx[22m
+[2m10:53:31 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/ProjectDetail.tsx, /src/styles/index.css[22m
+[2m10:57:32 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/styles/index.css[22m
+[2m10:57:32 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/styles/index.css[22m
